@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */; };
+		CCC130C82A6AA37E00C9FB9C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */; };
+		CCC130CA2A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */; };
+		CCC1312B2A6AC90800C9FB9C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */; };
+		CCC131302A6ACEE600C9FB9C /* PersonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */; };
+		CCC131322A6ACF8700C9FB9C /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */; };
+		CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */; };
+		CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */; };
+		CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */; };
 		CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */; };
 		CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */; };
 		CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */; };
-		CCD110D12A6A7B9F00CE009D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110CF2A6A7B9F00CE009D /* Main.storyboard */; };
 		CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */; };
 		CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D52A6A7BA000CE009D /* Assets.xcassets */; };
 		CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */; };
@@ -24,11 +31,18 @@
 
 /* Begin PBXFileReference section */
 		CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCoordinator.swift; sourceTree = "<group>"; };
+		CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonListStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewModel.swift; sourceTree = "<group>"; };
 		CCD110C62A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nick_Tsaruk_Homework_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CCD110D02A6A7B9F00CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD110D32A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nick_Tsaruk_Homework_10.xcdatamodel; sourceTree = "<group>"; };
 		CCD110D52A6A7BA000CE009D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD110D82A6A7BA000CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,8 +68,8 @@
 		CCC130C22A6A9DDD00C9FB9C /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */,
-				CCD110CF2A6A7B9F00CE009D /* Main.storyboard */,
+				CCC131292A6AC8F200C9FB9C /* ViewModel */,
+				CCC131282A6AC8C200C9FB9C /* View */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -63,6 +77,9 @@
 		CCC130C32A6A9E1000C9FB9C /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				CCC130C42A6AA2C700C9FB9C /* Protocols */,
+				CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */,
+				CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -73,6 +90,50 @@
 				CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CCC131282A6AC8C200C9FB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */,
+				CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC131292A6AC8F200C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCC1312C2A6ACE8300C9FB9C /* StudentsListModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1312E2A6ACEA300C9FB9C /* ViewModel */,
+				CCC1312D2A6ACE9B00C9FB9C /* VIew */,
+			);
+			path = StudentsListModule;
+			sourceTree = "<group>";
+		};
+		CCC1312D2A6ACE9B00C9FB9C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */,
+				CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		CCC1312E2A6ACEA300C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */,
+				CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CCD110BD2A6A7B9F00CE009D = {
@@ -94,12 +155,12 @@
 		CCD110C82A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10 */ = {
 			isa = PBXGroup;
 			children = (
-				CCC130C42A6AA2C700C9FB9C /* Protocols */,
 				CCC130C32A6A9E1000C9FB9C /* Coordinators */,
 				CCD110F32A6A9C9B00CE009D /* Model */,
 				CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */,
 				CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */,
 				CCC130C22A6A9DDD00C9FB9C /* MainModule */,
+				CCC1312C2A6ACE8300C9FB9C /* StudentsListModule */,
 				CCD110D52A6A7BA000CE009D /* Assets.xcassets */,
 				CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */,
 				CCD110E02A6A930B00CE009D /* CoreDataService.swift */,
@@ -179,8 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */,
+				CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */,
+				CCC130CA2A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard in Resources */,
 				CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */,
-				CCD110D12A6A7B9F00CE009D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,28 +255,26 @@
 			files = (
 				CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */,
 				CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */,
+				CCC131302A6ACEE600C9FB9C /* PersonCoordinator.swift in Sources */,
 				CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */,
 				CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */,
 				CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */,
 				CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */,
 				CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */,
+				CCC131322A6ACF8700C9FB9C /* PersonListViewController.swift in Sources */,
+				CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */,
 				CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */,
 				CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */,
+				CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */,
 				CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */,
+				CCC130C82A6AA37E00C9FB9C /* ApplicationCoordinator.swift in Sources */,
+				CCC1312B2A6AC90800C9FB9C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCD110CF2A6A7B9F00CE009D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCD110D02A6A7B9F00CE009D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +412,6 @@
 				INFOPLIST_FILE = Nick_Tsaruk_Homework_10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +439,6 @@
 				INFOPLIST_FILE = Nick_Tsaruk_Homework_10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
