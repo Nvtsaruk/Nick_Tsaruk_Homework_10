@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */; };
 		CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */; };
 		CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */; };
-		CCD110CE2A6A7B9F00CE009D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* ViewController.swift */; };
+		CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */; };
 		CCD110D12A6A7B9F00CE009D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110CF2A6A7B9F00CE009D /* Main.storyboard */; };
 		CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */; };
 		CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D52A6A7BA000CE009D /* Assets.xcassets */; };
 		CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */; };
+		CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110E02A6A930B00CE009D /* CoreDataService.swift */; };
+		CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */; };
+		CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */; };
+		CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */; };
+		CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CCD110C62A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nick_Tsaruk_Homework_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCD110CD2A6A7B9F00CE009D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CCD110D02A6A7B9F00CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD110D32A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nick_Tsaruk_Homework_10.xcdatamodel; sourceTree = "<group>"; };
 		CCD110D52A6A7BA000CE009D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD110D82A6A7BA000CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD110DA2A6A7BA000CE009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD110E02A6A930B00CE009D /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCC130C22A6A9DDD00C9FB9C /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */,
+				CCD110CF2A6A7B9F00CE009D /* Main.storyboard */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CCC130C32A6A9E1000C9FB9C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CCC130C42A6AA2C700C9FB9C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		CCD110BD2A6A7B9F00CE009D = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +94,30 @@
 		CCD110C82A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10 */ = {
 			isa = PBXGroup;
 			children = (
+				CCC130C42A6AA2C700C9FB9C /* Protocols */,
+				CCC130C32A6A9E1000C9FB9C /* Coordinators */,
+				CCD110F32A6A9C9B00CE009D /* Model */,
 				CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */,
 				CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */,
-				CCD110CD2A6A7B9F00CE009D /* ViewController.swift */,
-				CCD110CF2A6A7B9F00CE009D /* Main.storyboard */,
+				CCC130C22A6A9DDD00C9FB9C /* MainModule */,
 				CCD110D52A6A7BA000CE009D /* Assets.xcassets */,
 				CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */,
+				CCD110E02A6A930B00CE009D /* CoreDataService.swift */,
 				CCD110DA2A6A7BA000CE009D /* Info.plist */,
 				CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */,
 			);
 			path = Nick_Tsaruk_Homework_10;
+			sourceTree = "<group>";
+		};
+		CCD110F32A6A9C9B00CE009D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */,
+				CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */,
+				CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */,
+				CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD110CE2A6A7B9F00CE009D /* ViewController.swift in Sources */,
+				CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */,
+				CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */,
+				CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */,
+				CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */,
 				CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */,
+				CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */,
 				CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */,
+				CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */,
+				CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */,
 				CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
