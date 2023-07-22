@@ -3,6 +3,7 @@ import UIKit
 
 
 class ApplicationCoordinator:NSObject, Coordinator, UINavigationControllerDelegate {
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     

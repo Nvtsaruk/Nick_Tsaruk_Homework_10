@@ -16,6 +16,15 @@
 		CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */; };
 		CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */; };
 		CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */; };
+		CCC1313A2A6ADAD000C9FB9C /* PersonListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */; };
+		CCC1313D2A6BAC3300C9FB9C /* TextDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */; };
+		CCC131402A6BC4AE00C9FB9C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */; };
+		CCC131452A6BD8E900C9FB9C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */; };
+		CCC131462A6BD8E900C9FB9C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */; };
+		CCC1314A2A6BDB2A00C9FB9C /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131492A6BDB2A00C9FB9C /* PersonModel.swift */; };
+		CCC1314E2A6BE4D400C9FB9C /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */; };
+		CCC131502A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */; };
+		CCC131532A6BE93200C9FB9C /* AddStudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */; };
 		CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */; };
 		CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */; };
 		CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */; };
@@ -39,6 +48,15 @@
 		CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonListStoryboard.storyboard; sourceTree = "<group>"; };
 		CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
 		CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewModel.swift; sourceTree = "<group>"; };
+		CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewProtocol.swift; sourceTree = "<group>"; };
+		CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDecoration.swift; sourceTree = "<group>"; };
+		CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CCC131492A6BDB2A00C9FB9C /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudentStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewModel.swift; sourceTree = "<group>"; };
 		CCD110C62A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nick_Tsaruk_Homework_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +130,7 @@
 		CCC1312C2A6ACE8300C9FB9C /* StudentsListModule */ = {
 			isa = PBXGroup;
 			children = (
+				CCC131482A6BDB1D00C9FB9C /* Model */,
 				CCC1312E2A6ACEA300C9FB9C /* ViewModel */,
 				CCC1312D2A6ACE9B00C9FB9C /* VIew */,
 			);
@@ -123,6 +142,7 @@
 			children = (
 				CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */,
 				CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */,
+				CCC131472A6BD8ED00C9FB9C /* TableViewCell */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -131,7 +151,67 @@
 			isa = PBXGroup;
 			children = (
 				CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */,
+				CCC1313B2A6ADAD700C9FB9C /* Protocol */,
 				CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCC1313B2A6ADAD700C9FB9C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CCC1313E2A6BC4A400C9FB9C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CCC131472A6BD8ED00C9FB9C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */,
+				CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CCC131482A6BDB1D00C9FB9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131492A6BDB2A00C9FB9C /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCC1314B2A6BE49B00C9FB9C /* AddStudentModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131512A6BE91200C9FB9C /* ViewModel */,
+				CCC1314C2A6BE4B400C9FB9C /* View */,
+			);
+			path = AddStudentModule;
+			sourceTree = "<group>";
+		};
+		CCC1314C2A6BE4B400C9FB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */,
+				CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC131512A6BE91200C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,14 +235,17 @@
 		CCD110C82A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10 */ = {
 			isa = PBXGroup;
 			children = (
+				CCC1313E2A6BC4A400C9FB9C /* Classes */,
 				CCC130C32A6A9E1000C9FB9C /* Coordinators */,
 				CCD110F32A6A9C9B00CE009D /* Model */,
 				CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */,
 				CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */,
 				CCC130C22A6A9DDD00C9FB9C /* MainModule */,
 				CCC1312C2A6ACE8300C9FB9C /* StudentsListModule */,
+				CCC1314B2A6BE49B00C9FB9C /* AddStudentModule */,
 				CCD110D52A6A7BA000CE009D /* Assets.xcassets */,
 				CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */,
+				CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */,
 				CCD110E02A6A930B00CE009D /* CoreDataService.swift */,
 				CCD110DA2A6A7BA000CE009D /* Info.plist */,
 				CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */,
@@ -240,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */,
+				CCC131502A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard in Resources */,
+				CCC131462A6BD8E900C9FB9C /* TableViewCell.xib in Resources */,
 				CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */,
 				CCC130CA2A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard in Resources */,
 				CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */,
@@ -253,21 +338,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC131402A6BC4AE00C9FB9C /* Observable.swift in Sources */,
 				CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */,
 				CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */,
+				CCC1314A2A6BDB2A00C9FB9C /* PersonModel.swift in Sources */,
 				CCC131302A6ACEE600C9FB9C /* PersonCoordinator.swift in Sources */,
 				CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */,
+				CCC1313A2A6ADAD000C9FB9C /* PersonListViewProtocol.swift in Sources */,
 				CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */,
 				CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */,
 				CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */,
+				CCC1313D2A6BAC3300C9FB9C /* TextDecoration.swift in Sources */,
 				CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */,
+				CCC131452A6BD8E900C9FB9C /* TableViewCell.swift in Sources */,
 				CCC131322A6ACF8700C9FB9C /* PersonListViewController.swift in Sources */,
 				CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */,
 				CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */,
 				CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */,
+				CCC131532A6BE93200C9FB9C /* AddStudentViewModel.swift in Sources */,
 				CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */,
 				CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */,
 				CCC130C82A6AA37E00C9FB9C /* ApplicationCoordinator.swift in Sources */,
+				CCC1314E2A6BE4D400C9FB9C /* AddStudentViewController.swift in Sources */,
 				CCC1312B2A6AC90800C9FB9C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

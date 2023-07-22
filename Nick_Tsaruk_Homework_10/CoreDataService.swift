@@ -14,7 +14,7 @@ final class CoreDataService {
     }
     
     static private var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataRighr")
+        let container = NSPersistentContainer(name: "Nick_Tsaruk_Homework_10")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error),  \(error.userInfo)")
@@ -33,5 +33,9 @@ final class CoreDataService {
                 fatalError("Unresolved error \(error),  \(nserror.userInfo)")
             }
         }
+    }
+    static func removeItemFromContext() {
+        let context = persistentContainer.viewContext
+//        context.delete(<#T##object: NSManagedObject##NSManagedObject#>)
     }
 }
