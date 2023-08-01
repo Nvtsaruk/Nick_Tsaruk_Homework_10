@@ -5,7 +5,7 @@ protocol MainViewModelProtocol: AnyObject {
     func switchToTeachers()
 }
 
-class MainViewModel: MainViewModelProtocol {
+final class MainViewModel: MainViewModelProtocol {
     weak var coordinator: ApplicationCoordinator?
     func switchToStudents() {
         self.coordinator?.showStudentsList()
@@ -14,6 +14,4 @@ class MainViewModel: MainViewModelProtocol {
     func switchToTeachers() {
         self.coordinator?.showTeachersList()
     }
-    
-    
 }

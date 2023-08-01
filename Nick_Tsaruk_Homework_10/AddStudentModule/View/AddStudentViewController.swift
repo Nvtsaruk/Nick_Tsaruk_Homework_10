@@ -24,6 +24,7 @@ class AddStudentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        bindViewModel()
     }
     //MARK: - SetupUI
     
@@ -33,8 +34,15 @@ class AddStudentViewController: UIViewController {
     }
     //MARK: - IBAction
     @IBAction func chooseTeacherAction(_ sender: Any) {
+        viewModel?.addTeacher()
     }
     @IBAction func saveButtonAction(_ sender: Any) {
-        viewModel?.addStudent(name: nameTextField.text ?? "", age: Int16(ageTextField.text ?? "") ?? 0, teacher: nil)
+        viewModel?.addStudent(name: nameTextField.text ?? "", age: Int16(ageTextField.text ?? "") ?? 0)
+    }
+    private func bindViewModel() {
+        viewModel?.updateClosure = { [weak self] in
+            let label = ("Selected: \(self?.viewModel?.teacher.name ?? "") \(self?.viewModel?.teacher.lastname ?? "")")
+            self?.chooseTeacherButtonOutlet.setTitle(label, for: .normal)
+        }
     }
 }

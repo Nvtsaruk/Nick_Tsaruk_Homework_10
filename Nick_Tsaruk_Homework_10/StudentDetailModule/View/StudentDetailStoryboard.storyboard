@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Student Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StudentDetailViewController" id="Y6W-OH-hqX" customClass="StudentDetailViewController" customModule="Nick_Tsaruk_Homework_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4m-z3-6pY">
+                                <rect key="frame" x="16" y="90" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-7g-yjU">
+                                <rect key="frame" x="16" y="119" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBH-w4-jm7">
+                                <rect key="frame" x="16" y="148" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k4m-z3-6pY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="31" id="09G-iN-6Sp"/>
+                            <constraint firstItem="9VI-7g-yjU" firstAttribute="top" secondItem="k4m-z3-6pY" secondAttribute="bottom" constant="8" symbolic="YES" id="B6q-83-kuY"/>
+                            <constraint firstItem="dBH-w4-jm7" firstAttribute="trailing" secondItem="9VI-7g-yjU" secondAttribute="trailing" id="EZr-Jc-Aga"/>
+                            <constraint firstItem="9VI-7g-yjU" firstAttribute="leading" secondItem="k4m-z3-6pY" secondAttribute="leading" id="RaZ-j2-19m"/>
+                            <constraint firstItem="k4m-z3-6pY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="f9z-da-bcX"/>
+                            <constraint firstItem="dBH-w4-jm7" firstAttribute="leading" secondItem="9VI-7g-yjU" secondAttribute="leading" id="lfR-Ip-IeB"/>
+                            <constraint firstItem="dBH-w4-jm7" firstAttribute="top" secondItem="9VI-7g-yjU" secondAttribute="bottom" constant="8" symbolic="YES" id="qed-Ra-UbZ"/>
+                            <constraint firstItem="9VI-7g-yjU" firstAttribute="trailing" secondItem="k4m-z3-6pY" secondAttribute="trailing" id="wiJ-h1-gfY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k4m-z3-6pY" secondAttribute="trailing" constant="16" id="xgb-fz-Auu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="9VI-7g-yjU" id="GLh-MB-P4g"/>
+                        <outlet property="nameLabel" destination="k4m-z3-6pY" id="KJc-G0-XCG"/>
+                        <outlet property="teacherLabel" destination="dBH-w4-jm7" id="w2f-OB-moO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

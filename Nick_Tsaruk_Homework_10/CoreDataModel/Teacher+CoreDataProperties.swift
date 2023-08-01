@@ -18,7 +18,7 @@ extension Teacher {
 
     @NSManaged public var name: String?
     @NSManaged public var lastname: String?
-    @NSManaged public var students: NSSet?
+    @NSManaged public var students: NSSet
 
 }
 

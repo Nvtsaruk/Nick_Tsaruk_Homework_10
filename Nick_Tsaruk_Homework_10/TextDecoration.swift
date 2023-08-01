@@ -1,20 +1,34 @@
-//
-//  TextDecoration.swift
-//  NickTsarukHomewrok_9_MVP
-//
-//  Created by Tsaruk Nick on 17.07.23.
-//
-
 import UIKit
 
+enum TextDecorationVariant {
+    case list
+    case details
+    static var boldFont = UIFont.systemFont(ofSize: 22, weight: .bold)
+    static var regularFont = UIFont.systemFont(ofSize: 22, weight: .regular)
+}
+
 final class TextDecoration {
-    static func getDecoratedString(name: String, lastname: String? = nil, age: Int16? = nil) -> NSMutableAttributedString {
-        let nameFont = UIFont.systemFont(ofSize: 22, weight: .bold)
-        let lastnameFont = UIFont.systemFont(ofSize: 22, weight: .regular)
-        let ageString = String(Int(age ?? 0))
-        let fullString = NSMutableAttributedString(string: name + " " + (lastname ?? "") + ageString)
+    static func getDecoratedString(firstWord: String? = nil, secondWordString: String? = nil, secondWordInt: Int16? = nil, style: TextDecorationVariant) -> NSMutableAttributedString {
+        var fullString = NSMutableAttributedString(string: "")
+        var nameFont = TextDecorationVariant.boldFont
+        var lastnameFont = TextDecorationVariant.regularFont
+        switch style {
+            case .list:
+                nameFont = TextDecorationVariant.boldFont
+                lastnameFont = TextDecorationVariant.regularFont
+            case .details:
+                nameFont = TextDecorationVariant.regularFont
+                lastnameFont = TextDecorationVariant.boldFont
+        }
+        
+                if let unwrapAge = secondWordInt {
+                    let ageString = String(Int(unwrapAge))
+                    fullString = NSMutableAttributedString(string: (firstWord ?? "") + " " + ageString)
+                } else {
+                    fullString = NSMutableAttributedString(string: (firstWord ?? "") + " " + (secondWordString ?? ""))
+                }
         let fullLength = NSRange(location: 0, length: fullString.length)
-        let nameRange = NSRange(location: 0, length: name.count)
+        let nameRange = NSRange(location: 0, length: firstWord?.count ?? 0)
         fullString.addAttributes([.font: lastnameFont, .foregroundColor: UIColor.black], range: fullLength)
         fullString.addAttributes([.font: nameFont, .foregroundColor: UIColor.black], range: nameRange)
         return fullString

@@ -26,15 +26,27 @@ final class PersonListViewController: UIViewController {
         let longTap = UILongPressGestureRecognizer(target: self, action: #selector(didLongTap(_:)))
         tableView.addGestureRecognizer(longTap)
         viewModel?.setTitle()
-        viewModel?.loadInfo()
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEntity(_:)))
         viewModel?.viewTitle.bind { [weak self] viewTitle in
             guard let self = self else { return }
             self.title = viewTitle
         }
-        viewModel?.entityArray.bind { [ weak self ] entityArray in
-            guard let self = self else { return }
-            self.tableView.reloadData()
+//        viewModel?.entityArray.bind { entityArray in
+//            self.tableView.reloadData()
+//        }
+        viewModel?.reloadTable.bind{ reload in
+            self.viewModel?.loadInfo()
+        }
+        viewModel?.loadInfo()
+        bindViewModel()
+    }
+    
+    private func bindViewModel() {
+        viewModel?.updateClosure = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
     }
     
@@ -50,19 +62,22 @@ final class PersonListViewController: UIViewController {
 
 extension PersonListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.entityArray.value?.count ?? 0
+        return viewModel?.rowCount() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell else { return UITableViewCell()}
-        cell.labelText.attributedText = TextDecoration.getDecoratedString(name: viewModel?.entityArray.value?[indexPath.row].name ?? "", lastname: viewModel?.entityArray.value?[indexPath.row].lastname ?? "", age: viewModel?.entityArray.value?[indexPath.row].age)
+        cell.labelText.attributedText = viewModel?.cellData(index: indexPath.row)
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             viewModel?.removeEntity(index: indexPath.row)
-//            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.selectEntity(index: indexPath.row)
     }
 }
 
