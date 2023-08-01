@@ -1,21 +1,14 @@
-//
-//  AddStudentViewController.swift
-//  Nick_Tsaruk_Homework_10
-//
-//  Created by Tsaruk Nick on 22.07.23.
-//
-
 import UIKit
 
-class AddStudentViewController: UIViewController {
+final class AddStudentViewController: UIViewController {
 
     //MARK: - IBOutlet
     
-    @IBOutlet weak var chooseTeacherButtonOutlet: UIButton!
-    @IBOutlet weak var saveButtonOutlet: UIButton!
+    @IBOutlet private weak var chooseTeacherButtonOutlet: UIButton!
+    @IBOutlet private weak var saveButtonOutlet: UIButton!
     
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var ageTextField: UITextField!
     
     //MARK: - Variables
     
@@ -33,10 +26,10 @@ class AddStudentViewController: UIViewController {
         chooseTeacherButtonOutlet.layer.borderWidth = 1
     }
     //MARK: - IBAction
-    @IBAction func chooseTeacherAction(_ sender: Any) {
+    @IBAction private func chooseTeacherAction(_ sender: Any) {
         viewModel?.addTeacher()
     }
-    @IBAction func saveButtonAction(_ sender: Any) {
+    @IBAction private func saveButtonAction(_ sender: Any) {
         viewModel?.addStudent(name: nameTextField.text ?? "", age: Int16(ageTextField.text ?? "") ?? 0)
     }
     private func bindViewModel() {

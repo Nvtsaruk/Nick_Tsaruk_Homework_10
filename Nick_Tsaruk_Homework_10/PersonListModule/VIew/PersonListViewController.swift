@@ -23,8 +23,6 @@ final class PersonListViewController: UIViewController {
         tableView.delegate = self
         tableView.rowHeight = 60
         
-        let longTap = UILongPressGestureRecognizer(target: self, action: #selector(didLongTap(_:)))
-        tableView.addGestureRecognizer(longTap)
         viewModel?.setTitle()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEntity(_:)))
@@ -32,9 +30,7 @@ final class PersonListViewController: UIViewController {
             guard let self = self else { return }
             self.title = viewTitle
         }
-//        viewModel?.entityArray.bind { entityArray in
-//            self.tableView.reloadData()
-//        }
+
         viewModel?.reloadTable.bind{ reload in
             self.viewModel?.loadInfo()
         }

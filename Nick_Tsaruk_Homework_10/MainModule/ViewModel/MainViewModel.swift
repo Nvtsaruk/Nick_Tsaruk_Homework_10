@@ -6,6 +6,8 @@ protocol MainViewModelProtocol: AnyObject {
 }
 
 final class MainViewModel: MainViewModelProtocol {
+    
+    //MARK: - Variables
     weak var coordinator: ApplicationCoordinator?
     func switchToStudents() {
         self.coordinator?.showStudentsList()

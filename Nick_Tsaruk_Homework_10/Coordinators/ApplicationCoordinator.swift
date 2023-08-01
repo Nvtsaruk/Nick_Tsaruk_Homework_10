@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
 
-
 final class ApplicationCoordinator:NSObject, Coordinator, UINavigationControllerDelegate {
     var updateClosure: (() -> Void)?
     

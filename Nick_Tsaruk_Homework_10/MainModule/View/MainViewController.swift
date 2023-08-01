@@ -2,6 +2,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
+    //MARK: - Variables
     var viewModel: MainViewModelProtocol?
     
     override func viewDidLoad() {

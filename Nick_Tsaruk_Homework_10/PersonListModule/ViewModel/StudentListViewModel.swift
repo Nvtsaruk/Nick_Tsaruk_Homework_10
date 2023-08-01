@@ -2,6 +2,7 @@ import Foundation
 
 final class StudentListViewModel: PersonListViewModelProtocol {
     
+    //MARK: - Variables
     var reloadTable: Observable<Bool> = Observable(false)
     weak var coordinator: PersonCoordinator?
     var updateClosure: (() -> Void)?
@@ -15,7 +16,6 @@ final class StudentListViewModel: PersonListViewModelProtocol {
         DispatchQueue.main.async {
             self.entityArray = CoreDataService.getStudents()
         }
-        
     }
     
     func rowCount() -> Int {
@@ -33,9 +33,11 @@ final class StudentListViewModel: PersonListViewModelProtocol {
     func setTitle() {
         self.viewTitle.value = "Students"
     }
+    
     func switchToAddEntity() {
         self.coordinator?.showAddStudent()
     }
+    
     func removeEntity(index: Int) {
         DispatchQueue.main.async {
             let request = Student.fetchRequest()

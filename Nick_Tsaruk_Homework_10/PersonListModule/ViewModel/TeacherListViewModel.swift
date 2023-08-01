@@ -8,6 +8,7 @@ enum TeachersViewModelState {
 
 final class TeacherListViewModel: PersonListViewModelProtocol {
     
+    //MARK: - Variables
     var reloadTable: Observable<Bool> = Observable(false)
     weak var coordinator: PersonCoordinator?
     var updateClosure: (() -> Void)?
@@ -36,12 +37,16 @@ final class TeacherListViewModel: PersonListViewModelProtocol {
     }
     
     func rowCount() -> Int {
+        coordinator?.updateClosure = { [weak self] in
+            self?.loadInfo()
+        }
         return entityArray.count
     }
     
     func setTitle() {
         self.viewTitle.value = "Teachers"
     }
+    
     func switchToAddEntity() {
         switch state {
             case .ViewTeachers:
@@ -51,10 +56,12 @@ final class TeacherListViewModel: PersonListViewModelProtocol {
         }
         
     }
+    
     func cellData(index: Int) -> NSAttributedString {
         let cellDataString = TextDecoration.getDecoratedString(firstWord: entityArray[index].name, secondWordString: entityArray[index].lastname, style: TextDecorationVariant.list)
         return cellDataString
     }
+    
     func removeEntity(index: Int) {
         DispatchQueue.main.async {
             let request = Teacher.fetchRequest()
@@ -65,10 +72,11 @@ final class TeacherListViewModel: PersonListViewModelProtocol {
         }
         entityArray.remove(at: index)
     }
+    
     func selectEntity(index: Int) {
         switch state {
             case .ViewTeachers:
-                coordinator?.showTeacherDetails(teacherId: index)
+                coordinator?.showTeacherDetails(teacher: entityArray[index], teacherId: index)
             case .AddTeacherToStudent:
                 coordinator?.popToStudents(teacher: entityArray[index], teacherId: index)
         }

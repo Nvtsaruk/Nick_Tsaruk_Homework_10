@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC19EC282A74F28E00FEB5CB /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC272A74F28E00FEB5CB /* TeacherModel.swift */; };
-		CC19EC2D2A753A9500FEB5CB /* CoreDataService copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC2C2A753A9500FEB5CB /* CoreDataService copy.swift */; };
 		CC19EC312A75454900FEB5CB /* AddTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC2F2A75408800FEB5CB /* AddTeacherViewController.swift */; };
 		CC19EC322A75454F00FEB5CB /* AddTeacherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC19EC2E2A75408800FEB5CB /* AddTeacherStoryboard.storyboard */; };
 		CC19EC332A75456600FEB5CB /* AddTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC302A75426D00FEB5CB /* AddTeacherViewModel.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		CC19EC272A74F28E00FEB5CB /* TeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
-		CC19EC2C2A753A9500FEB5CB /* CoreDataService copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataService copy.swift"; sourceTree = "<group>"; };
 		CC19EC2E2A75408800FEB5CB /* AddTeacherStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTeacherStoryboard.storyboard; sourceTree = "<group>"; };
 		CC19EC2F2A75408800FEB5CB /* AddTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeacherViewController.swift; sourceTree = "<group>"; };
 		CC19EC302A75426D00FEB5CB /* AddTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeacherViewModel.swift; sourceTree = "<group>"; };
@@ -351,7 +349,6 @@
 				CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */,
 				CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */,
 				CCD110E02A6A930B00CE009D /* CoreDataService.swift */,
-				CC19EC2C2A753A9500FEB5CB /* CoreDataService copy.swift */,
 				CCD110DA2A6A7BA000CE009D /* Info.plist */,
 				CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */,
 			);
@@ -447,7 +444,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC131402A6BC4AE00C9FB9C /* Observable.swift in Sources */,
-				CC19EC2D2A753A9500FEB5CB /* CoreDataService copy.swift in Sources */,
 				CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */,
 				CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */,
 				CCC1314A2A6BDB2A00C9FB9C /* StudentModel.swift in Sources */,

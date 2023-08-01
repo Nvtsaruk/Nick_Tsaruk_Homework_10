@@ -1,13 +1,6 @@
-//
-//  Observable.swift
-//  Nick_Tsaruk_Homework_10
-//
-//  Created by Tsaruk Nick on 22.07.23.
-//
-
 import Foundation
 
-class Observable<T> {
+final class Observable<T> {
     
     var value: T? {
         didSet {

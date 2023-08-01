@@ -1,37 +1,30 @@
-//
-//  TeacherDetailViewController.swift
-//  Nick_Tsaruk_Homework_10
-//
-//  Created by Tsaruk Nick on 30.07.23.
-//
-
 import UIKit
 
 final class TeacherDetailViewController: UIViewController {
 
+    //MARK: - IBOutlet
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lastnameLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: - Variables
     var viewModel: TeacherDetailViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
-        viewModel?.getTeachers()
+        viewModel?.getStudentsArray()
     }
     
     private func setupUI() {
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
-//        nameLabel.text = viewModel?.teacher.name
-//        lastnameLabel.text = viewModel?.teacher.lastname
+        nameLabel.attributedText = TextDecoration.getDecoratedString(firstWord: "Name:", secondWordString: viewModel?.teacher.name, style: .details)
+        lastnameLabel.attributedText = TextDecoration.getDecoratedString(firstWord: "Name:", secondWordString: viewModel?.teacher.lastname, style: .details)
         tableView.dataSource = self
         tableView.delegate = self
     }
-
 }
 
 extension TeacherDetailViewController: UITableViewDelegate, UITableViewDataSource {

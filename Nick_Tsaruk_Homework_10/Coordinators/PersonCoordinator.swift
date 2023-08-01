@@ -53,11 +53,11 @@ class PersonCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func showTeacherDetails(teacherId: Int) {
+    func showTeacherDetails(teacher: TeacherModel, teacherId: Int) {
         let storyboard = UIStoryboard(name: "TeacherDetailStoryboard", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "TeacherDetailViewController") as? TeacherDetailViewController else { return }
         navigationController.delegate = self
-        let viewModel = TeacherDetailViewModel(teacherId: teacherId)
+        let viewModel = TeacherDetailViewModel(teacher: teacher, teacherId: teacherId)
         viewModel.coordinator = self
         vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
@@ -74,12 +74,12 @@ class PersonCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     }
 
     func popToPrevious() {
-        self.update.value = true
+//        self.update.value = true
         updateClosure?()
         navigationController.popToViewController(navigationController.viewControllers[1], animated: true)
     }
     func popToStudents(teacher: TeacherModel, teacherId: Int) {
-        self.update.value = true
+//        self.update.value = true
         let vc = navigationController.viewControllers[2] as? AddStudentViewController
         vc?.viewModel?.teacherId = teacherId
         vc?.viewModel?.teacher = teacher
