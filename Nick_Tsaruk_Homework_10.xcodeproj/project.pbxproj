@@ -7,25 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC19EC282A74F28E00FEB5CB /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC272A74F28E00FEB5CB /* TeacherModel.swift */; };
+		CC19EC312A75454900FEB5CB /* AddTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC2F2A75408800FEB5CB /* AddTeacherViewController.swift */; };
+		CC19EC322A75454F00FEB5CB /* AddTeacherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC19EC2E2A75408800FEB5CB /* AddTeacherStoryboard.storyboard */; };
+		CC19EC332A75456600FEB5CB /* AddTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC302A75426D00FEB5CB /* AddTeacherViewModel.swift */; };
+		CC19EC3A2A75577700FEB5CB /* StudentDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC19EC392A75577700FEB5CB /* StudentDetailStoryboard.storyboard */; };
+		CC19EC3C2A75578800FEB5CB /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC3B2A75578800FEB5CB /* StudentDetailViewController.swift */; };
+		CC19EC3E2A75598800FEB5CB /* StudentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC3D2A75598800FEB5CB /* StudentDetailsViewModel.swift */; };
+		CC19EC432A76555F00FEB5CB /* TeacherDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC19EC422A76555F00FEB5CB /* TeacherDetailStoryboard.storyboard */; };
+		CC19EC452A76556E00FEB5CB /* TeacherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC442A76556E00FEB5CB /* TeacherDetailViewController.swift */; };
+		CC19EC472A76569300FEB5CB /* TeacherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19EC462A76569300FEB5CB /* TeacherDetailViewModel.swift */; };
+		CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */; };
+		CCC130C82A6AA37E00C9FB9C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */; };
+		CCC130CA2A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */; };
+		CCC1312B2A6AC90800C9FB9C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */; };
+		CCC131302A6ACEE600C9FB9C /* PersonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */; };
+		CCC131322A6ACF8700C9FB9C /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */; };
+		CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */; };
+		CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */; };
+		CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */; };
+		CCC1313A2A6ADAD000C9FB9C /* PersonListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */; };
+		CCC1313D2A6BAC3300C9FB9C /* TextDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */; };
+		CCC131402A6BC4AE00C9FB9C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */; };
+		CCC131452A6BD8E900C9FB9C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */; };
+		CCC131462A6BD8E900C9FB9C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */; };
+		CCC1314A2A6BDB2A00C9FB9C /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131492A6BDB2A00C9FB9C /* StudentModel.swift */; };
+		CCC1314E2A6BE4D400C9FB9C /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */; };
+		CCC131502A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */; };
+		CCC131532A6BE93200C9FB9C /* AddStudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */; };
 		CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */; };
 		CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */; };
-		CCD110CE2A6A7B9F00CE009D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* ViewController.swift */; };
-		CCD110D12A6A7B9F00CE009D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110CF2A6A7B9F00CE009D /* Main.storyboard */; };
+		CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */; };
 		CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */; };
 		CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D52A6A7BA000CE009D /* Assets.xcassets */; };
 		CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */; };
+		CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110E02A6A930B00CE009D /* CoreDataService.swift */; };
+		CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */; };
+		CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */; };
+		CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */; };
+		CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC19EC272A74F28E00FEB5CB /* TeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
+		CC19EC2E2A75408800FEB5CB /* AddTeacherStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTeacherStoryboard.storyboard; sourceTree = "<group>"; };
+		CC19EC2F2A75408800FEB5CB /* AddTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeacherViewController.swift; sourceTree = "<group>"; };
+		CC19EC302A75426D00FEB5CB /* AddTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeacherViewModel.swift; sourceTree = "<group>"; };
+		CC19EC392A75577700FEB5CB /* StudentDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		CC19EC3B2A75578800FEB5CB /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
+		CC19EC3D2A75598800FEB5CB /* StudentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsViewModel.swift; sourceTree = "<group>"; };
+		CC19EC422A76555F00FEB5CB /* TeacherDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		CC19EC442A76556E00FEB5CB /* TeacherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDetailViewController.swift; sourceTree = "<group>"; };
+		CC19EC462A76569300FEB5CB /* TeacherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDetailViewModel.swift; sourceTree = "<group>"; };
+		CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCoordinator.swift; sourceTree = "<group>"; usesTabs = 0; };
+		CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonListStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewModel.swift; sourceTree = "<group>"; };
+		CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewProtocol.swift; sourceTree = "<group>"; };
+		CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDecoration.swift; sourceTree = "<group>"; };
+		CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CCC131492A6BDB2A00C9FB9C /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudentStoryboard.storyboard; sourceTree = "<group>"; };
+		CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewModel.swift; sourceTree = "<group>"; };
 		CCD110C62A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nick_Tsaruk_Homework_10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCD110CD2A6A7B9F00CE009D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCD110D02A6A7B9F00CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CCD110D32A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nick_Tsaruk_Homework_10.xcdatamodel; sourceTree = "<group>"; };
 		CCD110D52A6A7BA000CE009D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD110D82A6A7BA000CE009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD110DA2A6A7BA000CE009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD110E02A6A930B00CE009D /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +103,218 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC19EC292A7512B500FEB5CB /* AddTeacherModule */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC2A2A7512C900FEB5CB /* ViewModel */,
+				CC19EC2B2A7512D400FEB5CB /* View */,
+			);
+			path = AddTeacherModule;
+			sourceTree = "<group>";
+		};
+		CC19EC2A2A7512C900FEB5CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC302A75426D00FEB5CB /* AddTeacherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC19EC2B2A7512D400FEB5CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC2F2A75408800FEB5CB /* AddTeacherViewController.swift */,
+				CC19EC2E2A75408800FEB5CB /* AddTeacherStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC19EC362A75556800FEB5CB /* StudentDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC382A75558900FEB5CB /* ViewModel */,
+				CC19EC372A75558300FEB5CB /* View */,
+			);
+			path = StudentDetailModule;
+			sourceTree = "<group>";
+		};
+		CC19EC372A75558300FEB5CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC3B2A75578800FEB5CB /* StudentDetailViewController.swift */,
+				CC19EC392A75577700FEB5CB /* StudentDetailStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC19EC382A75558900FEB5CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC3D2A75598800FEB5CB /* StudentDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC19EC3F2A7654EE00FEB5CB /* TeachersDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC412A76550100FEB5CB /* ViewModel */,
+				CC19EC402A7654FA00FEB5CB /* View */,
+			);
+			path = TeachersDetailModule;
+			sourceTree = "<group>";
+		};
+		CC19EC402A7654FA00FEB5CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC422A76555F00FEB5CB /* TeacherDetailStoryboard.storyboard */,
+				CC19EC442A76556E00FEB5CB /* TeacherDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC19EC412A76550100FEB5CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC19EC462A76569300FEB5CB /* TeacherDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCC130C22A6A9DDD00C9FB9C /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131292A6AC8F200C9FB9C /* ViewModel */,
+				CCC131282A6AC8C200C9FB9C /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CCC130C32A6A9E1000C9FB9C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CCC130C42A6AA2C700C9FB9C /* Protocols */,
+				CCC130C72A6AA37E00C9FB9C /* ApplicationCoordinator.swift */,
+				CCC1312F2A6ACEE600C9FB9C /* PersonCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CCC130C42A6AA2C700C9FB9C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CCC130C52A6AA2E600C9FB9C /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CCC131282A6AC8C200C9FB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCD110CD2A6A7B9F00CE009D /* MainViewController.swift */,
+				CCC130C92A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC131292A6AC8F200C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1312A2A6AC90800C9FB9C /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCC1312C2A6ACE8300C9FB9C /* PersonListModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131482A6BDB1D00C9FB9C /* Model */,
+				CCC1312E2A6ACEA300C9FB9C /* ViewModel */,
+				CCC1312D2A6ACE9B00C9FB9C /* VIew */,
+			);
+			path = PersonListModule;
+			sourceTree = "<group>";
+		};
+		CCC1312D2A6ACE9B00C9FB9C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131312A6ACF8700C9FB9C /* PersonListViewController.swift */,
+				CCC131332A6ACF9900C9FB9C /* PersonListStoryboard.storyboard */,
+				CCC131472A6BD8ED00C9FB9C /* TableViewCell */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		CCC1312E2A6ACEA300C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131352A6ACFFB00C9FB9C /* StudentListViewModel.swift */,
+				CCC1313B2A6ADAD700C9FB9C /* Protocol */,
+				CCC131372A6AD64D00C9FB9C /* TeacherListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCC1313B2A6ADAD700C9FB9C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131392A6ADAD000C9FB9C /* PersonListViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CCC1313E2A6BC4A400C9FB9C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1313F2A6BC4AE00C9FB9C /* Observable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CCC131472A6BD8ED00C9FB9C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131432A6BD8E900C9FB9C /* TableViewCell.swift */,
+				CCC131442A6BD8E900C9FB9C /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CCC131482A6BDB1D00C9FB9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131492A6BDB2A00C9FB9C /* StudentModel.swift */,
+				CC19EC272A74F28E00FEB5CB /* TeacherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCC1314B2A6BE49B00C9FB9C /* AddStudentModule */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131512A6BE91200C9FB9C /* ViewModel */,
+				CCC1314C2A6BE4B400C9FB9C /* View */,
+			);
+			path = AddStudentModule;
+			sourceTree = "<group>";
+		};
+		CCC1314C2A6BE4B400C9FB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1314D2A6BE4D400C9FB9C /* AddStudentViewController.swift */,
+				CCC1314F2A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC131512A6BE91200C9FB9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC131522A6BE93200C9FB9C /* AddStudentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CCD110BD2A6A7B9F00CE009D = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +334,36 @@
 		CCD110C82A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10 */ = {
 			isa = PBXGroup;
 			children = (
+				CCC1313E2A6BC4A400C9FB9C /* Classes */,
+				CCC130C32A6A9E1000C9FB9C /* Coordinators */,
+				CCD110F32A6A9C9B00CE009D /* CoreDataModel */,
 				CCD110C92A6A7B9F00CE009D /* AppDelegate.swift */,
 				CCD110CB2A6A7B9F00CE009D /* SceneDelegate.swift */,
-				CCD110CD2A6A7B9F00CE009D /* ViewController.swift */,
-				CCD110CF2A6A7B9F00CE009D /* Main.storyboard */,
+				CCC130C22A6A9DDD00C9FB9C /* MainModule */,
+				CCC1312C2A6ACE8300C9FB9C /* PersonListModule */,
+				CC19EC362A75556800FEB5CB /* StudentDetailModule */,
+				CC19EC3F2A7654EE00FEB5CB /* TeachersDetailModule */,
+				CCC1314B2A6BE49B00C9FB9C /* AddStudentModule */,
+				CC19EC292A7512B500FEB5CB /* AddTeacherModule */,
 				CCD110D52A6A7BA000CE009D /* Assets.xcassets */,
 				CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */,
+				CCC1313C2A6BAC3300C9FB9C /* TextDecoration.swift */,
+				CCD110E02A6A930B00CE009D /* CoreDataService.swift */,
 				CCD110DA2A6A7BA000CE009D /* Info.plist */,
 				CCD110D22A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld */,
 			);
 			path = Nick_Tsaruk_Homework_10;
+			sourceTree = "<group>";
+		};
+		CCD110F32A6A9C9B00CE009D /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCD110EB2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift */,
+				CCD110EC2A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift */,
+				CCD110ED2A6A9C7B00CE009D /* Student+CoreDataClass.swift */,
+				CCD110EE2A6A9C7B00CE009D /* Student+CoreDataProperties.swift */,
+			);
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +425,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD110D92A6A7BA000CE009D /* LaunchScreen.storyboard in Resources */,
+				CCC131502A6BE4E400C9FB9C /* AddStudentStoryboard.storyboard in Resources */,
+				CCC131462A6BD8E900C9FB9C /* TableViewCell.xib in Resources */,
+				CC19EC322A75454F00FEB5CB /* AddTeacherStoryboard.storyboard in Resources */,
+				CC19EC3A2A75577700FEB5CB /* StudentDetailStoryboard.storyboard in Resources */,
+				CCC131342A6ACF9900C9FB9C /* PersonListStoryboard.storyboard in Resources */,
+				CC19EC432A76555F00FEB5CB /* TeacherDetailStoryboard.storyboard in Resources */,
+				CCC130CA2A6AAF2C00C9FB9C /* MainViewControllerStoryboard.storyboard in Resources */,
 				CCD110D62A6A7BA000CE009D /* Assets.xcassets in Resources */,
-				CCD110D12A6A7B9F00CE009D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +443,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD110CE2A6A7B9F00CE009D /* ViewController.swift in Sources */,
+				CCC131402A6BC4AE00C9FB9C /* Observable.swift in Sources */,
+				CCD110CE2A6A7B9F00CE009D /* MainViewController.swift in Sources */,
+				CCD110F12A6A9C7B00CE009D /* Student+CoreDataClass.swift in Sources */,
+				CCC1314A2A6BDB2A00C9FB9C /* StudentModel.swift in Sources */,
+				CCC131302A6ACEE600C9FB9C /* PersonCoordinator.swift in Sources */,
+				CCC130C62A6AA2E600C9FB9C /* Coordinator.swift in Sources */,
+				CCC1313A2A6ADAD000C9FB9C /* PersonListViewProtocol.swift in Sources */,
+				CC19EC452A76556E00FEB5CB /* TeacherDetailViewController.swift in Sources */,
+				CCD110F02A6A9C7B00CE009D /* Teacher+CoreDataProperties.swift in Sources */,
 				CCD110D42A6A7B9F00CE009D /* Nick_Tsaruk_Homework_10.xcdatamodeld in Sources */,
+				CCD110E12A6A930B00CE009D /* CoreDataService.swift in Sources */,
+				CCC1313D2A6BAC3300C9FB9C /* TextDecoration.swift in Sources */,
 				CCD110CA2A6A7B9F00CE009D /* AppDelegate.swift in Sources */,
+				CCC131452A6BD8E900C9FB9C /* TableViewCell.swift in Sources */,
+				CC19EC3E2A75598800FEB5CB /* StudentDetailsViewModel.swift in Sources */,
+				CCC131322A6ACF8700C9FB9C /* PersonListViewController.swift in Sources */,
+				CCC131382A6AD64D00C9FB9C /* TeacherListViewModel.swift in Sources */,
+				CCD110F22A6A9C7B00CE009D /* Student+CoreDataProperties.swift in Sources */,
+				CCD110EF2A6A9C7B00CE009D /* Teacher+CoreDataClass.swift in Sources */,
+				CCC131532A6BE93200C9FB9C /* AddStudentViewModel.swift in Sources */,
+				CC19EC312A75454900FEB5CB /* AddTeacherViewController.swift in Sources */,
+				CC19EC332A75456600FEB5CB /* AddTeacherViewModel.swift in Sources */,
+				CC19EC282A74F28E00FEB5CB /* TeacherModel.swift in Sources */,
+				CCC131362A6ACFFB00C9FB9C /* StudentListViewModel.swift in Sources */,
+				CC19EC3C2A75578800FEB5CB /* StudentDetailViewController.swift in Sources */,
 				CCD110CC2A6A7B9F00CE009D /* SceneDelegate.swift in Sources */,
+				CCC130C82A6AA37E00C9FB9C /* ApplicationCoordinator.swift in Sources */,
+				CC19EC472A76569300FEB5CB /* TeacherDetailViewModel.swift in Sources */,
+				CCC1314E2A6BE4D400C9FB9C /* AddStudentViewController.swift in Sources */,
+				CCC1312B2A6AC90800C9FB9C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCD110CF2A6A7B9F00CE009D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCD110D02A6A7B9F00CE009D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCD110D72A6A7BA000CE009D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +616,6 @@
 				INFOPLIST_FILE = Nick_Tsaruk_Homework_10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +643,6 @@
 				INFOPLIST_FILE = Nick_Tsaruk_Homework_10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
